@@ -10,6 +10,11 @@ export default {
       title: 'Title'
     },
     {
+      name: 'secondLine',
+      type: 'string',
+      title: 'Second Line'
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',
