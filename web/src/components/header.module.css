@@ -1,9 +1,14 @@
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
 
 .root {
   position: relative;
   z-index: 100;
+  background: var(--color-light-accent);
+  background: var(--color-light-accent-gradient), url("../static_asst/image/aeroshell.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .wrapper {
