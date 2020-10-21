@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: var(--color-white);
+  font-size: 1.2em;
 }
 
 .wrapper {
@@ -26,6 +28,11 @@
 .branding {
   font-weight: 600;
   flex: 1;
+
+  @nest & span {
+    padding: 0.5em;
+    font-size: 0.8em;
+  }
 
   @nest & a {
     display: inline-block;
