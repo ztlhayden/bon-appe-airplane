@@ -10,9 +10,10 @@ export default {
       title: 'Title'
     },
     {
-      name: 'secondLine',
+      name: 'subtitle',
       type: 'string',
-      title: 'Second Line'
+      title: 'Subtitle',
+      description: 'Make it your one line pitch'
     },
     {
       name: 'description',
