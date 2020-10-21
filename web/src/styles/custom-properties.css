@@ -8,12 +8,12 @@
   --color-very-light-gray: #cad1d9;
   --color-white: #ffffff;
   --color-accent: #df2935;
-  --color-light-accent: #63b4d1;
-  --color-very-light-accent: #86bbd8;
+  --color-light-accent: #3e7cb1;
+  --color-very-light-accent: #3e78b2;
   --color-light-accent-gradient: linear-gradient(
     140deg,
-    hsla(196, 54%, 60%, 0.95) 0%,
-    hsla(201, 51%, 69%, 0.85) 100%
+    hsla(280, 56%, 60%, 0.97) 0%,
+    hsla(210, 48%, 47%, 0.97) 100%
   );
 
   /* Typography */
