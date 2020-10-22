@@ -63,6 +63,27 @@ export const query = graphql`
         }
       }
     }
+    recipes: allSanityRecipe(
+      limit: 3
+      sort: { fields: [publishedAt], order: DESC }
+      filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
+    ) {
+      edges {
+        node {
+          id
+          publishedAt
+          mainImage {
+            ...SanityImage
+            alt
+          }
+          title
+          _rawExcerpt
+          slug {
+            current
+          }
+        }
+      }
+    }
   }
 `
 
@@ -80,6 +101,12 @@ const IndexPage = props => {
   const site = (data || {}).site
   const postNodes = (data || {}).posts
     ? mapEdgesToNodes(data.posts)
+      .filter(filterOutDocsWithoutSlugs)
+      .filter(filterOutDocsPublishedInTheFuture)
+    : []
+
+    const recipeNodes = (data || {}).recipes
+    ? mapEdgesToNodes(data.recipes)
       .filter(filterOutDocsWithoutSlugs)
       .filter(filterOutDocsPublishedInTheFuture)
     : []
@@ -107,6 +134,13 @@ const IndexPage = props => {
               title='Newest posts'
               nodes={postNodes}
               browseMoreHref='/archive/'
+            />
+          )}
+          {postNodes && (
+            <BlogPostPreviewList
+              title='Newest Recipes'
+              nodes={recipeNodes}
+              browseMoreHref='/recipes/'
             />
           )}
         </div>
