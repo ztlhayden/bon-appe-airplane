@@ -105,15 +105,15 @@ const IndexPage = props => {
           <Icon symbol='plane' />
           <Icon symbol='code' />
         </div>
-        
+
         <div>
-        {postNodes && (
-          <BlogPostPreviewList
-            title='Newest posts'
-            nodes={postNodes}
-            browseMoreHref='/archive/'
-          />
-        )}
+          {postNodes && (
+            <BlogPostPreviewList
+              title='Newest posts'
+              nodes={postNodes}
+              browseMoreHref='/archive/'
+            />
+          )}
         </div>
       </Container>
     </Layout>

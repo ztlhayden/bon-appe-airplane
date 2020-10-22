@@ -11,6 +11,18 @@
   background-size: cover;
   color: var(--color-white);
   font-size: 1.2em;
+  height: 230px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
+}
+
+.root:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 230px;
+  width: 100%;
+  background: var(--color-gray);
+  clip-path: polygon(0% 47%, 100% 97%, 100% 100%, 0% 50%);
 }
 
 .wrapper {

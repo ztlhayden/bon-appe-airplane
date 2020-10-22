@@ -9,6 +9,7 @@
   --color-white: #ffffff;
   --color-accent: #df2935;
   --color-light-accent: #3e7cb1;
+  --color-light-accent-2: hsla(280, 56%, 60%, 0.8);
   --color-very-light-accent: #3e78b2;
   --color-light-accent-gradient: linear-gradient(
     140deg,
