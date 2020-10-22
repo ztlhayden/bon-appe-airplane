@@ -11,26 +11,22 @@
   background-size: cover;
   color: var(--color-white);
   font-size: 1.2em;
-  height: 230px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
 
-  @media (--media-max-medium) {
-    clip-path: none;
-    height: unset;
+  @media (--media-min-medium) {
+    height: 230px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
   }
 }
 
 .root:after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  height: 230px;
-  width: 100%;
-  background: var(--color-gray);
-  clip-path: polygon(0% 47%, 100% 97%, 100% 100%, 0% 50%);
-
-  @media (--media-max-medium) {
-    display: none;
+  @media (--media-min-medium) {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 230px;
+    width: 100%;
+    background: var(--color-gray);
+    clip-path: polygon(0% 47%, 100% 97%, 100% 100%, 0% 50%);
   }
 }
 
@@ -52,7 +48,7 @@
 
   @nest & span {
     padding: 0.5em;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   @nest & a {
@@ -84,7 +80,7 @@
     fill: inherit;
   }
 
-  @media (--media-min-small) {
+  @media (--media-min-medium) {
     display: none;
   }
 }
@@ -109,7 +105,7 @@
     }
   }
 
-  @media (--media-max-small) {
+  @media (--media-max-medium) {
     position: absolute;
     background: var(--color-white);
     color: var(--color-black);
@@ -127,7 +123,7 @@
     }
   }
 
-  @media (--media-min-small) {
+  @media (--media-min-medium) {
     display: block;
 
     @nest & ul {
