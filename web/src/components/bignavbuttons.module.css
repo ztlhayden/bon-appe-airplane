@@ -20,10 +20,10 @@
   height: auto;
   background: var(--color-light-accent);
   background: var(--color-light-accent-gradient);
-  transition: transform ease-in-out 1s;
 
   @nest & svg {
     stroke: white;
+    transition: stroke 0.15s;
   }
 
   @nest & :hover {
