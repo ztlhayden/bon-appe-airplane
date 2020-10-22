@@ -13,6 +13,11 @@
   font-size: 1.2em;
   height: 230px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
+
+  @media (--media-max-medium) {
+    clip-path: none;
+    height: unset;
+  }
 }
 
 .root:after {
@@ -23,6 +28,10 @@
   width: 100%;
   background: var(--color-gray);
   clip-path: polygon(0% 47%, 100% 97%, 100% 100%, 0% 50%);
+
+  @media (--media-max-medium) {
+    display: none;
+  }
 }
 
 .wrapper {
