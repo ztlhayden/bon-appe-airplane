@@ -3,12 +3,10 @@ import React from 'react'
 const Burger = () => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="205"
-  height="205"
   data-name="Layer 1"
   viewBox="0 0 205 205"
   >
-    <g fill="none" stroke="#000" strokeMiterlimit="10" strokeWidth="3.173">
+    <g fill="none" strokeMiterlimit="10" strokeWidth="3.173">
       <path d="M58.15 27.5h88.71a43.82 43.82 0 0143.82 43.82v3.23a3.77 3.77 0 01-3.77 3.77H18.1a3.77 3.77 0 01-3.77-3.77v-3.23A43.82 43.82 0 0158.15 27.5z"></path>
       <rect
         width="176.48"
