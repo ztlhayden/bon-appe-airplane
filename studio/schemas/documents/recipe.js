@@ -63,6 +63,26 @@ export default {
       ]
     },
     {
+      name: 'ingredients',
+      type: 'bodyPortableText',
+      title: 'Ingredients'
+    },
+    {
+      name: 'equipment',
+      type: 'bodyPortableText',
+      title: 'Equipment'
+    },
+    {
+      name: 'preptime',
+      type: 'string',
+      title: 'Prep Time'
+    },
+    {
+      name: 'cooktime',
+      type: 'string',
+      title: 'Cooking Time'
+    },
+    {
       name: 'steps',
       type: 'bodyPortableText',
       title: 'Steps'
