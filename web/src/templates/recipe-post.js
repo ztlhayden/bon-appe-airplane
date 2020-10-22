@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql} from 'gatsby'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
-//import BlogPost from '../components/blog-post'
+import RecipePost from '../components/recipe-post'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import {toPlainText} from '../lib/helpers'
@@ -71,7 +71,7 @@ const RecipePostTemplate = props => {
         </Container>
       )}
 
-      {/*{post && <BlogPost {...post} />}*/}
+      {post && <RecipePost {...post} />}
     </Layout>
   )
 }
