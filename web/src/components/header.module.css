@@ -25,7 +25,7 @@
     bottom: 0px;
     height: 230px;
     width: 100%;
-    background: var(--color-gray);
+    background: var(--color-dark-gray);
     clip-path: polygon(0% 47%, 100% 97%, 100% 100%, 0% 50%);
   }
 }

@@ -14,13 +14,14 @@
   padding: 1em;
   margin: 0;
   border-radius: 50%;
+  border: var(--color-dark-gray) solid 3px;
   width: 20%;
   max-width: 120px;
   height: auto;
   background: var(--color-light-accent);
   background: var(--color-light-accent-gradient);
 
-  @nest & a > svg {
+  @nest & svg {
     stroke: white;
   }
 }
