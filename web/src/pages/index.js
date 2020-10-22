@@ -105,7 +105,7 @@ const IndexPage = props => {
       .filter(filterOutDocsPublishedInTheFuture)
     : []
 
-    const recipeNodes = (data || {}).recipes
+  const recipeNodes = (data || {}).recipes
     ? mapEdgesToNodes(data.recipes)
       .filter(filterOutDocsWithoutSlugs)
       .filter(filterOutDocsPublishedInTheFuture)
@@ -127,6 +127,7 @@ const IndexPage = props => {
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
         <p hidden>{site.subtitle}</p>
+        <p style={{textAlign: 'center', marginBottom: '2em'}}>Welcome to Bon Appe Airplane! This is the blog of all things technical, edible, and airborne. My name is Hayden Young, and I am an airline pilot turned full stack developer from Lexington, Kentucky. When I’m not building websites, I enjoy the outdoors, cooking, and pretty much anything transportation related. Here I write about all of this, and share my photos and recipes.</p>
         <BigNavButtons />
         <div>
           {postNodes && (
