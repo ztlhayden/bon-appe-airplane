@@ -39,6 +39,21 @@
   }
 }
 
+.prepContent {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.equipment,
+.ingredients {
+  justify-self: center;
+}
+
+.time {
+  grid-area: 1 / first / last / 1;
+}
+
 .mainContent {
   @nest & a {
     color: var(--color-accent);

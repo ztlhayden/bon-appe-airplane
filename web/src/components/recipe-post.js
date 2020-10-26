@@ -29,14 +29,19 @@ function RecipePost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <div>
-              <h2>Time</h2>
-              <p>Prep Time: {preptime}{console.log(preptime, title)}</p>
-              <p>Cook Time: {cooktime}</p>
-              <h2>Equipment</h2>
-              {_rawEquipment && <PortableText blocks={_rawEquipment} />}
-              <h2>Ingredients</h2>
-              {_rawEquipment && <PortableText blocks={_rawIngredients} />}
+            <div className={styles.prepContent}>
+              <div className={styles.time}>
+                <p>Prep Time: {preptime}{console.log(preptime, title)}</p>
+                <p>Cook Time: {cooktime}</p>
+              </div>
+              <div className={styles.equipment}>
+                <h2>Equipment</h2>
+                {_rawEquipment && <PortableText blocks={_rawEquipment} />}
+              </div>
+              <div className={styles.ingredients}>
+                <h2>Ingredients</h2>
+                {_rawEquipment && <PortableText blocks={_rawIngredients} />}
+              </div>
             </div>
             <h2>Steps</h2>
             {_rawSteps && <PortableText blocks={_rawSteps} />}
