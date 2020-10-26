@@ -9,7 +9,7 @@ import AuthorList from './author-list'
 import styles from './recipe-post.module.css'
 
 function RecipePost (props) {
-  const {_rawSteps, authors, categories, title, mainImage, publishedAt} = props
+  const {_rawSteps, authors, categories, title, mainImage, publishedAt, _rawEquipment, cookTime, prepTime, _rawIngredients} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -29,6 +29,16 @@ function RecipePost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
+            <div>
+              <h2>Time</h2>
+            <p>Prep Time: {prepTime}{console.log(prepTime, cookTime)}</p>
+              <p>Cook Time: {cookTime}</p>
+              <h2>Equipment</h2>
+              {_rawEquipment && <PortableText blocks={_rawEquipment} />}
+              <h2>Ingredients</h2>
+              {_rawEquipment && <PortableText blocks={_rawIngredients} />}
+            </div>
+            <h2>Steps</h2>
             {_rawSteps && <PortableText blocks={_rawSteps} />}
           </div>
           <aside className={styles.metaContent}>
