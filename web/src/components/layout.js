@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './header'
+import FooterNav from './FooterNav'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -10,6 +11,7 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
     <div className={styles.content}>{children}</div>
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
+        <FooterNav />
         <div className={styles.siteInfo}>
           &copy; {new Date().getFullYear()}, Built by <a href="https://deadhead.design">Hayden Young</a> with <a href='https://www.sanity.io'>Sanity</a>{' '}
           &amp;
