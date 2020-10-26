@@ -20,8 +20,9 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
         <ul>
           <li><Link to='/archive/'>Blog</Link></li>
           <li><Link to='/recipes/'>Recipes</Link></li>
-          {/*<li><Link to='/about/'>About</Link></li>
-          <li><Link to='/gallery/'>Gallery</Link></li>*/}
+          <li><Link to="/uses/">Uses</Link></li>
+          <li><a href="https://haydenyoung.me">Resume</a></li>
+          <li><Link to="/contact/">Contact</Link></li>
         </ul>
       </nav>
     </div>
