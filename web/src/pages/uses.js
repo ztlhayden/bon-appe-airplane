@@ -4,9 +4,6 @@ import Container from '../components/container'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
-
-
-
 const UsesPage = () => {
   return (
     <Layout>

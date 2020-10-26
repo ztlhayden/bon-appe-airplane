@@ -3,6 +3,9 @@ import HamburgerIcon from './hamburger'
 import PlaneIcon from './planesq'
 import Burger from './burgersq'
 import Code from './codesq'
+import TwitterIcon from './twitter'
+import LinkedInIcon from './linkedin'
+import GithubIcon from './github'
 
 function Icon (props) {
   switch (props.symbol) {
@@ -14,6 +17,12 @@ function Icon (props) {
       return <Code />
     case 'plane':
       return <PlaneIcon />
+    case 'github':
+      return <GithubIcon />
+    case 'linkedin':
+      return <LinkedInIcon />
+    case 'twitter':
+        return <TwitterIcon />
     default:
       return <span>Unknown icon: {props.symbol}</span>
   }
