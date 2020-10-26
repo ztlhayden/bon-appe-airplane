@@ -59,7 +59,7 @@
 
     @media (hover: hover) {
       @nest &:hover {
-        color: var(--color-accent);
+        color: var(--color-light-gray);
       }
     }
   }
@@ -101,7 +101,7 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      color: var(--color-accent);
+      color: var(--color-light-gray);
     }
   }
 
