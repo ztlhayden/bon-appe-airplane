@@ -9,7 +9,7 @@ import AuthorList from './author-list'
 import styles from './recipe-post.module.css'
 
 function RecipePost (props) {
-  const {_rawSteps, authors, categories, title, mainImage, publishedAt, _rawEquipment, cookTime, prepTime, _rawIngredients} = props
+  const {_rawSteps, authors, categories, title, mainImage, publishedAt, _rawEquipment, cooktime, preptime, _rawIngredients} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -31,8 +31,8 @@ function RecipePost (props) {
             <h1 className={styles.title}>{title}</h1>
             <div>
               <h2>Time</h2>
-            <p>Prep Time: {prepTime}{console.log(prepTime, cookTime)}</p>
-              <p>Cook Time: {cookTime}</p>
+              <p>Prep Time: {preptime}{console.log(preptime, title)}</p>
+              <p>Cook Time: {cooktime}</p>
               <h2>Equipment</h2>
               {_rawEquipment && <PortableText blocks={_rawEquipment} />}
               <h2>Ingredients</h2>

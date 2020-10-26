@@ -67,7 +67,7 @@ const RecipePostTemplate = props => {
   return (
     <Layout>
       {errors && <SEO title='GraphQL Error' />}
-      {post && <SEO title={post.title || 'Untitled'} description={toPlainText(post._rawExcerpt)} image={post.mainImage} prepTime={post.preptime || 'No Prep Time'} cookTime={post.cooktime || 'No Cook Time'} equipment={post._rawEquipment} ingredients={post._rawIngredients}/>}
+      {post && <SEO title={post.title || 'Untitled'} description={toPlainText(post._rawExcerpt)} image={post.mainImage} />}
 
       {errors && (
         <Container>
