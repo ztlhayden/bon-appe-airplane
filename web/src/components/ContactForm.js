@@ -5,7 +5,7 @@ import {cn} from '../lib/helpers'
 const ContactForm = () => {
   return (
     <form className={styles.root} acceptCharset='UTF-8' action='https://formspree.io/f/xleobqbd' autoComplete='off' method='POST' target='_blank'>
-      <legend className={styles.headline}>Send me a message:</legend>
+      <legend className={styles.headline}>Send a message:</legend>
       <label htmlFor='name'><span hidden>Name</span><br />
         <input className={styles.feild} name='name' type='text' id='name' required placeholder='Your Name' />
       </label><br />
