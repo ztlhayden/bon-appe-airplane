@@ -1,0 +1,7 @@
+.root {
+  display: flex;
+}
+
+.label {
+  display: block;
+}

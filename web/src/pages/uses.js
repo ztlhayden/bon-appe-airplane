@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+//import {Link} from 'gatsby'
 import Container from '../components/container'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
@@ -11,7 +11,7 @@ const UsesPage = () => {
       <Container>
         <h1>Hayden Young Uses</h1>
         <p>Checkout <a href="https://uses.tech">Uses.Tech</a> to see a ton of developers /uses pages!</p>
-        <p>If you're interested in the technologies I have experiance in check out the <Link to="/tech/">/Tech</Link> page.</p>
+        {/* <p>If you're interested in the technologies I have experiance in check out the <Link to="/tech/">/Tech</Link> page.</p> */}
 
         <h2>Code Editor</h2>
         <ul>
