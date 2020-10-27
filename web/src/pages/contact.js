@@ -9,8 +9,12 @@ const ContactPage = () => {
     <Layout>
       <SEO title='contact me' />
       <Container>
-        <h1>Contact Me!</h1>
-        <ContactForm />
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          <div>
+            <h1 style={{textAlign: 'center'}}>Contact Me!</h1>
+            <ContactForm />
+          </div>
+        </div>
       </Container>
     </Layout>
   )
