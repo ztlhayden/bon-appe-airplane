@@ -22,7 +22,7 @@
   background: var(--color-light-accent-gradient);
 
   @nest & svg {
-    stroke: white;
+    stroke: var(--color-white);
     transition: stroke 0.15s;
   }
 
