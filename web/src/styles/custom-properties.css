@@ -16,6 +16,11 @@
     hsla(280, 56%, 60%, 0.97) 0%,
     hsla(210, 48%, 47%, 0.8) 100%
   );
+  --color-light-accent-gradient-rev: linear-gradient(
+    320deg,
+    hsla(280, 56%, 60%, 0.97) 0%,
+    hsla(210, 48%, 47%, 0.8) 100%
+  );
 
   /* Typography */
   --unit: 16;
